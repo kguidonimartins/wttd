@@ -1,0 +1,1 @@
+# M1A12: Simplifique tudo com Sequências - https://welcometothedjango.com.br/?post_type=aula&p=922

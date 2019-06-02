@@ -1,0 +1,1 @@
+# M1A20: Faça mágica com atribuições inteligentes - https://welcometothedjango.com.br/?post_type=aula&p=930
