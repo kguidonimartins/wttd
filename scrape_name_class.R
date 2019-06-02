@@ -60,7 +60,7 @@ completo_aulas_md <-
   str_replace_all(" ", "_") %>% 
   paste0(".md")
 
-if (!file.exists("modulo01/m1a01_conheca_a_sua_jornada.md")){
+if (!file.exists("modulo_01/m1a01_conheca_a_sua_jornada.md")){
   
   for (i in seq_along(completo_aulas_md)) {
     sink(completo_aulas_md[i])
