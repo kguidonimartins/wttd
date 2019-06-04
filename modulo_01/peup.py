@@ -1,6 +1,3 @@
-# M1A08: Python em uma página
-
-```python
 import os
 
 
@@ -46,19 +43,3 @@ def foo(a, b):
 
 if __name__ == '__main__':
     main()
-```
-
-```bash
-pwd
-python modulo_01/meuprograma.py
-```
-
-# Acessando as variáveis globais do python
-
-<!-- TODO: responda o que é *namespace* -->
-
-```python
-globals
-mensagem = 'Python r0x'
-globals()
-```

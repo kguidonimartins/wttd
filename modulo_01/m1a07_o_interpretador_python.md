@@ -28,28 +28,28 @@ Passando o programa para o interpretador:
 
 ```bash
 python meuprograma.py
-``` 
+```
 
 Rodando o programa e abrindo o python no modo interativo:
 
 ```bash
 python -i  meuprograma.py
-``` 
- 
+```
+
 Para instalar o ipython:
 
-```shell
+```bash
 pip install ipython[notebook]
 ```
 
 Para testar:
 
-```shell
+```bash
 ipython
 ```
 
 iPython com extensão notebook:
 
-```shell
+```bash
 ipython notebook
 ```
