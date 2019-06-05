@@ -1,0 +1,1 @@
+# M2A04: Como trabalhar com arquivos estáticos - https://welcometothedjango.com.br/?post_type=aula&p=1100
