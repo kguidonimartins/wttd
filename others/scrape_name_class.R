@@ -98,6 +98,7 @@ completo_aulas_md <-
   replace_non_ascii() %>%
   str_remove_all(":") %>% 
   str_remove_all("!") %>%
+  str_remove_all("\\?") %>%
   str_to_lower() %>%
   str_replace_all(" ", "_") %>%
   str_replace_all(",", "") %>%
@@ -181,6 +182,7 @@ completo_aulas_md <-
   replace_non_ascii() %>%
   str_remove_all(":") %>% 
   str_remove_all("!") %>%
+  str_remove_all("\\?") %>%
   str_to_lower() %>%
   str_replace_all(" ", "_") %>%
   str_replace_all(",", "") %>%
