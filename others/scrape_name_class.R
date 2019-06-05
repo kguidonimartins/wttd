@@ -28,7 +28,9 @@ ipak(
   c(
     "rvest", 
     "tidyverse", 
-    "pacman"
+    "pacman",
+    "fs",
+    "here"
     )
   )
 
@@ -44,6 +46,9 @@ pacman::p_load_gh(
 #                 código para o módulo 01                  #
 #                                                          #
 ############################################################
+
+
+fs::dir_create("../modulo_01")
 
 
 url <- "html/Conheça a sua jornada - Welcome to the Django.html"
@@ -99,25 +104,22 @@ completo_aulas_md <-
   paste0(".md")
 
 
-if (!file.exists("../modulo_01/m1a01_conheca_a_sua_jornada.md")){
+modulo_01_path <- "../modulo_01/"
+
+
+for (i in seq_along(completo_aulas_md)) {
   
-  
-  for (i in seq_along(completo_aulas_md)) {
+  if (!file.exists(paste0(modulo_01_path, completo_aulas_md[i]))) {
     
-    
-    sink(completo_aulas_md[i])
+    sink(paste0(modulo_01_path, completo_aulas_md[i]))
     cat(paste("#", completo_aulas[i], "-", link_aulas[i]))
     sink()
     
+  } else {
+    
+    message(paste0(modulo_01_path, completo_aulas_md[i]), " já existe")
     
   }
-  
-  
-} else {
-  
-  
-  print("esses arquivos já existem")
-  
   
 }
 
@@ -127,3 +129,79 @@ if (!file.exists("../modulo_01/m1a01_conheca_a_sua_jornada.md")){
 #                 código para o módulo 02                  #
 #                                                          #
 ############################################################
+
+
+fs::dir_create("../modulo_02")
+
+
+url <- "html/Como não ficar para trás com seu projeto Django - Welcome to the Django.html"
+
+
+titulo_aulas <-
+  url %>%
+  read_html() %>%
+  html_nodes("ol") %>%
+  html_text() %>%
+  str_split("\n\n") %>%
+  .[[1]] %>%
+  str_replace_all("\n", "")
+
+
+n_aulas <- length(titulo_aulas)
+
+
+link_aulas <-
+  url %>%
+  read_html() %>%
+  html_nodes("ol") %>%
+  html_nodes("a") %>%
+  html_attr("href")
+
+
+codigo_aulas <- 
+  rep(
+    paste0(
+      "M2A", 
+      formatC(
+        x = 1:n_aulas, 
+        digits = 1, 
+        flag = 0, 
+        format = "d"
+        ),
+      ":"
+      )
+    )
+
+
+completo_aulas <- paste(codigo_aulas, titulo_aulas)
+
+
+completo_aulas_md <-
+  completo_aulas %>%
+  replace_non_ascii() %>%
+  str_remove_all(":") %>% 
+  str_remove_all("!") %>%
+  str_to_lower() %>%
+  str_replace_all(" ", "_") %>%
+  str_replace_all(",", "") %>%
+  paste0(".md")
+
+
+modulo_02_path <- "../modulo_02/"
+
+
+for (i in seq_along(completo_aulas_md)) {
+  
+  if (!file.exists(paste0(modulo_02_path, completo_aulas_md[i]))) {
+    
+    sink(paste0(modulo_02_path, completo_aulas_md[i]))
+    cat(paste("#", completo_aulas[i], "-", link_aulas[i]))
+    sink()
+    
+  } else {
+    
+    message(paste0(modulo_02_path, completo_aulas_md[i]), " já existe")
+    
+  }
+  
+}
