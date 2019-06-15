@@ -15,7 +15,7 @@ nome[4]
 ```python
 nome[len(nome)-1]
 nome[-1]
-import magic_indexes
+import modulo_01.magic_indexes
 %indexes $nome
 ```
 
@@ -40,6 +40,9 @@ nome[1:7:2]
 nome[1:-1:2]
 nome[::2]
 nome[::-1]
+nome[-2:]
+nome[0:2]
+nome[1:]
 ```
 
 ```python
