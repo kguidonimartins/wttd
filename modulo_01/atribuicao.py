@@ -1,6 +1,4 @@
 # row = "Karlo", "Vix", 22.9, 43.1
-table = (("Karlo", "Vix", 22.9, 43.1),
-         ("Gregório", "Cariacica", 22.2, 34.7))
 
 
 # def f(t):
@@ -83,6 +81,10 @@ table = (("Karlo", "Vix", 22.9, 43.1),
 #
 # if __name__ == '__main__':
 #     f(row)
+
+
+table = (("Karlo", "Vix", 22.9, 43.1),
+         ("Gregório", "Cariacica", 22.2, 34.7))
 
 
 # for row in table:
