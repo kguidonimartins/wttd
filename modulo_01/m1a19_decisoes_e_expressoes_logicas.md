@@ -68,8 +68,8 @@ bool(['abc'])
 True and 'abc' # retorna o último elemento avaliado
 True and []
 'abc' and True
-[]  and True # and exige que os dois sejam verdadeiros, então retorna a lista
-1 or [] # não testa o segundo elemento
+[] and True # and exige que os dois sejam verdadeiros; então, retorna a lista
+1 or [] # or exige que o primeiro seja verdadeiro; logo, não testa o segundo elemento
 1 or indefinido
 1 and indefinido
 ```
