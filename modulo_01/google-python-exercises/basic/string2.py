@@ -1,4 +1,3 @@
-#!/usr/bin/python2.4 -tt
 # Copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 # http://www.apache.org/licenses/LICENSE-2.0
@@ -17,9 +16,13 @@
 # If the string length is less than 3, leave it unchanged.
 # Return the resulting string.
 def verbing(s):
-    # +++your code here+++
-    return
-
+    if len(s) < 3:
+        verb = s
+    elif s[-3:] == "ing":
+        verb = "".join([s, "ly"])
+    else:
+        verb = "".join([s, "ing"])
+    return verb
 
 # E. not_bad
 # Given a string, find the first appearance of the
@@ -30,7 +33,6 @@ def verbing(s):
 # So 'This dinner is not that bad!' yields:
 # This dinner is good!
 def not_bad(s):
-    # +++your code here+++
     return
 
 

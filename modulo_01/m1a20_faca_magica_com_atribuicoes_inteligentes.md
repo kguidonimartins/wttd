@@ -5,3 +5,5 @@ Vídeo sobre o sinal de igual
 ```bash
 python modulo_01/atribuicao.py
 ```
+
+TODO: refazer passando atribuição para o markdown
