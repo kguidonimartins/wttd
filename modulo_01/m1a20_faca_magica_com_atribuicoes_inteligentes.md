@@ -208,7 +208,7 @@ for row in table:
     print(nome, cidade, lat, long)
 ```
 
-No do laço `for` a tupla é lida por posição. A tupla `table` tem comprimento = 2 (`len(table)`). Mas cada item quatro elementos. Isso facilita a extração dentro do laço `for`, eliminando a necessidade de um indexador.
+No do laço `for` a tupla é lida por posição. A tupla `table` tem comprimento = 2 (`len(table)`). Mas cada item tem quatro elementos. Isso facilita a extração dentro do laço `for`, eliminando a necessidade de um indexador. O indexador `row` da operação anterior foi omitido.
 
 ```python
 for nome, cidade, lat, long in table:
