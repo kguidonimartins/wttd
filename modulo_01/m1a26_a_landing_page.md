@@ -10,4 +10,11 @@ wget https://welcometothedjango.com.br/wp-content/uploads/2015/12/landingpage.zi
 unzip landingpage.zip
 ```
 
-Aplicação do landingpage feito no pycharm.
+Importando template para o projeto.
+
+```bash
+pwd
+mkdir -p eventex/core/static
+mv -t eventex/core/static landingpage/css landingpage/fonts/ landingpage/img landingpage/js
+mv -t eventex/core/templates landingpage/index.html
+```
