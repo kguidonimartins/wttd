@@ -115,4 +115,4 @@ tree
 
 ATENÇÃO À HIERARQUIA NECESSÁRIA PARA TUDO FUNCIONAR!
 
-A partir daqui, os outro comandos são executados no pycharm. Para a instalação do pycharm, consulte o arquivo: `00_instalacao-pycharm-ubuntu-1604.md`
+A partir daqui, os outro comandos são executados no pycharm. Para a instalação do pycharm, consulte o arquivo: `others/00_instalacao-pycharm-ubuntu-1604.md`
