@@ -86,3 +86,23 @@ Not Found: /js/retina-1.1.0.min.js
 Not Found: /js/main.js
 [27/Jun/2019 23:27:57] "GET /js/main.js HTTP/1.1" 404 2070
 ```
+
+É necessário incluir as baterias nessa landingpage. O primeiro passo é editar o cabeçalho do arquivo `template/index.html` e incluir logo na primeira linha: `{% load static %}`. Isso informa onde estão os arquivos de estilo. O segundo passo é substituir a referência dos arquivos de estilo pelo *find and replace* do seu editor de texto. Expressões regulares ajudam a substituir os caminhos, minimizando tanto os erros quanto o trabalho manual.
+
+A expressão utilizada para a busca será:
+
+```
+(src|href)="((img|css|js).*?)"
+```
+
+E para a substituição será:
+
+```
+$1="{% static '$2' %}"
+```
+
+Ao todo, foram encontrados 18 caminhos para serem substituídos.
+
+![](img/regex-django-paths.png)
+
+A página agora deve renderizar todos os estilos.
