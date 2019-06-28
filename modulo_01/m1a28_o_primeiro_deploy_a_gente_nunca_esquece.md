@@ -59,3 +59,34 @@ heroku open
 ```
 
 ![](img/heroku-app-before-deploy.png)
+
+## Configuração do ambiente de produção
+
+Primeiro a secret key
+
+```bash
+heroku config:set SECRET_KEY='f1zhoutybyd@2)g3df^d3tne3+k5*7y2tb&&p4svp$l3c_4f^n'
+```
+
+Agora o debug
+
+```bash
+heroku config:set DEBUG=True
+```
+
+## Deploy do projeto
+
+```bash
+git push heroku master --force
+```
+
+## Checando online
+
+```bash
+heroku open
+```
+
+## Links
+
+App: https://eventex-kguidonimartins.herokuapp.com/
+Repositório: https://github.com/kguidonimartins/app-eventex-wttd
