@@ -8,10 +8,54 @@ pip install dj-database-url
 pip install dj-static
 ```
 
-Pegue as alterações com o commit desse arquivo.
+## Pegue as alterações com o [commit](https://github.com/kguidonimartins/wttd/commit/eba873ee8ea8a16bea1e1be249ba588766fddc32) desse arquivo.
 
 Nota¹: a SECRET_KEY dentro do arquivo `.env` não pode conter espaço nem aspas.
 
 Nota²: sqlite3 para desenvolvimento e postgresql para produção
 
 Nota³: entrada do 'gunicorn==19.8.1' e  do 'psycopg2==2.7.4' no requirements.txt sem o uso do `pip`. Essas bibliotecas serão utilizadas somente em produção. Além disso, elas podem exigir outras dependências não prontamente disponíveis pelo sistema operacional.
+
+## Instalação do git na pasta
+
+Somente arquivos-fonte serão versionados. Arquivos gerados dinamicamente, não.
+
+Vai no `.gitignore`:
+
+```
+.env
+.idea
+.my_project
+*.sqlite3
+*pyc
+__pycache__
+landingpage.zip
+```
+
+## Add e commit do projeto
+
+Primeiro commit do `.gitignore`. Depois commit do resto do projeto.
+
+## Push do projeto pelo heroku CLI
+
+```bash
+heroku apps:create eventex-kguidonimartins
+```
+
+## Checagens
+
+A primeira checagem é se o git reconhece o heroku como repositório.
+
+```bash
+git remove -v
+# heroku	https://git.heroku.com/eventex-kguidonimartins.git (fetch)
+# heroku	https://git.heroku.com/eventex-kguidonimartins.git (push)
+```
+
+A segunda checagem é abrir a aplicação.
+
+```bash
+heroku open
+```
+
+![](img/heroku-app-before-deploy.png)
