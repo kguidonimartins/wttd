@@ -2,9 +2,9 @@
 
 Sequência dos exercícios:
 
-<!-- 
+<!--
 TODO: Continuar exercícios
-BODY:
+-->
 
 ```
 google-python-exercises/
@@ -18,4 +18,3 @@ google-python-exercises/
     logpuzzle/logpuzzle.py
     copyspecial/copyspecial.py
 ```
--->
