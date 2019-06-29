@@ -2,6 +2,10 @@
 
 Sequência dos exercícios:
 
+<!-- 
+TODO: Continuar exercícios
+BODY:
+
 ```
 google-python-exercises/
     basic/string1.py
@@ -14,3 +18,4 @@ google-python-exercises/
     logpuzzle/logpuzzle.py
     copyspecial/copyspecial.py
 ```
+-->
