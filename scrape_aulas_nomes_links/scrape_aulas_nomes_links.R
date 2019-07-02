@@ -57,10 +57,11 @@ scrape_and_organize <- function(html, caminho_modulo, codigo_aulas){
     url %>%
     read_html() %>%
     html_nodes("ol") %>%
-    html_text() %>%
-    str_split("\n\n") %>%
+    html_text() %>% 
+    str_replace_all("[:control:]+", "\n") %>% 
+    str_split("\n") %>%
     .[[1]] %>%
-    str_replace_all("\n", "")
+    .[. != ""]
   
   n_aulas <- length(titulo_aulas)
   
