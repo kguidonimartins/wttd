@@ -70,7 +70,9 @@ scrape_and_organize <- function(html, caminho_modulo, codigo_aulas){
     read_html() %>%
     html_nodes("ol") %>%
     html_nodes("a") %>%
-    html_attr("href")
+    html_attr("href") %>% 
+    str_remove("https://welcometothedjango.com.br") %>% 
+    paste0("https://welcometothedjango.com.br", .)
   
   codigo_aulas <- 
     rep(
