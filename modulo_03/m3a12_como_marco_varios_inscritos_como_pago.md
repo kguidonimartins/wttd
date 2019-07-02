@@ -1,0 +1,1 @@
+# M3A12: Como marco vários inscritos como pago? - https://welcometothedjango.com.br/?post_type=aula&p=1125

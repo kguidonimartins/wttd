@@ -1,0 +1,1 @@
+# M3A05: As pessoas não estão lendo os emails de inscrição - https://welcometothedjango.com.br/?post_type=aula&p=1118

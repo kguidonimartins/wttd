@@ -149,4 +149,16 @@ scrape_and_organize(
 )
 
 
+############################################################
+#                                                          #
+#                        modulo 03                         #
+#                                                          #
+############################################################
+
+
+scrape_and_organize(
+  html = "html/Pausa para um upgrade na sua produtividade - Welcome to the Django.html", 
+  caminho_modulo = "../modulo_03/", 
+  codigo_aulas = "M3A"
+)
 
