@@ -1,0 +1,1 @@
+# M4A11: Como reaproveitar as lógicas das views - https://welcometothedjango.com.br/?post_type=aula&p=1141

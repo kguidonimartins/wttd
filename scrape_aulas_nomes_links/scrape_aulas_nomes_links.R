@@ -162,3 +162,16 @@ scrape_and_organize(
   codigo_aulas = "M3A"
 )
 
+
+############################################################
+#                                                          #
+#                        modulo 04                         #
+#                                                          #
+############################################################
+
+
+scrape_and_organize(
+  html = "html/All input is evil - Welcome to the Django.html", 
+  caminho_modulo = "../modulo_04/", 
+  codigo_aulas = "M4A"
+)

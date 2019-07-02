@@ -1,0 +1,1 @@
+# M4A08: Como evitar lógica de negócio espalhada pelo código - https://welcometothedjango.com.br/?post_type=aula&p=1138
