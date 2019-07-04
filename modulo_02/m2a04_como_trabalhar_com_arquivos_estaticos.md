@@ -195,5 +195,5 @@ Mandei para meu repositório no github, mas esse passo não foi feito na aula.
 TODO: Servir arquivos estátivos usando Amazon S3
 BODY: Ainda não consegui usar isso. Fiz algo errado na Amazon e me foi cobrado R$ 4,23. As imagens da minha tentativa frustrada estão em: modulo_02/img/try-set-s3/
 
-
+https://forum.welcometothedjango.com.br/t/m2a04-collectstatic-amazonaws/1168
  -->
