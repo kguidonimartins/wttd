@@ -24,7 +24,7 @@ Após a importação, vá até o terminal, ative o projeto e rode o servidor:
 ```bash
 pwd
 source .my_project/bin/activate
-python manage.py runserver
+manage.py runserver
 ```
 
 A página é exibida, mas sem aplicação de estilos.
