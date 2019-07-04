@@ -59,27 +59,27 @@ Comando disponíveis:
 python manage.py
 ```
 
-Criando alias para manage.py (opcional)
+Criando alias para manage.py (faça isso, para o seu bem)
 
 ```bash
-# cd eventex
-# pwd
-# echo $VIRTUAL_ENV
-# alias manage='python $VIRTUAL_ENV/../manage.py'
-# echo $VIRTUAL_ENV
-# manage
+cd eventex
+pwd
+echo $VIRTUAL_ENV
+alias manage='python $VIRTUAL_ENV/../manage.py'
+echo $VIRTUAL_ENV
+manage
 ```
 
 Inicializando servidor:
 
 ```bash
-../manage.py runserver
+manage.py runserver
 ```
 
 Criação da primeira django app
 
 ```bash
-../manage.py startapp core
+manage.py startapp core
 ```
 
 Retorno ao diretório e visualização da estrutura.
