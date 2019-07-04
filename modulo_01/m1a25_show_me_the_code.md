@@ -56,7 +56,7 @@ tree
 Comando disponíveis:
 
 ```bash
-python manage.py
+manage
 ```
 
 Criando alias para manage.py (faça isso, para o seu bem)
@@ -73,13 +73,13 @@ manage
 Inicializando servidor:
 
 ```bash
-manage.py runserver
+manage runserver
 ```
 
 Criação da primeira django app
 
 ```bash
-manage.py startapp core
+manage startapp core
 ```
 
 Retorno ao diretório e visualização da estrutura.

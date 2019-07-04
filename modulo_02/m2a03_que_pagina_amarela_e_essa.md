@@ -73,7 +73,7 @@ A página retorna ao erro inicial!
 Rodando a aplicação localmente.
 
 ```bash
-manage.py runserver
+manage runserver
 ```
 
 Reproduzindo o erro de [*url*](http://127.0.0.1:8000/nao-existe/), porém localmente.
@@ -97,7 +97,7 @@ Not Found: /favicon.ico
 Desabilitando o `DEBUG`.
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 Informações do terminal.
@@ -113,7 +113,7 @@ Mudanças no `ALLOWED_HOSTS = []` do `my_project/eventex/settings.py` para `ALLO
 Desabilitando o `DEBUG` novamente.
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 Era esperado que a home da langindpage fosse exibida sem o estilo
@@ -123,13 +123,13 @@ Era esperado que a home da langindpage fosse exibida sem o estilo
 Mas não aconteceu aqui. Para estes casos, é necessário rodar o comando para coletar os arquivos estáticos.
 
 ```bash
-manage.py collectstatic
+manage collectstatic
 ```
 
 E, novamente:
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 Agora [*url*](http://127.0.0.1:8000/nao-existe/) inexistente deve ser exibida as informações do DEBUG.
@@ -145,7 +145,7 @@ Confira modificações no `ALLOWED_HOSTS` do `my_project/eventex/settings.py`. O
 Cancele o processo no terminal e reinicie novamente.
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 Conferir a [*url*](http://127.0.0.1:8000/nao-existe/) inexistente.

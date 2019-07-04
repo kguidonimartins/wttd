@@ -21,13 +21,13 @@ Acesse o ambiente de desenvolvimento.
 pwd
 cd my_project
 source .my_project/bin/activate
-manage.py runserver
+manage runserver
 ```
 
 Cancele e acesse com `DEBUG=False`
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 ![](img/localhost-wout-static-files.png)
@@ -37,10 +37,10 @@ Era esperado que o site fosse exibido sem os arquivos estáticos de estilo. No e
 Varrendo os diretórios com arquivos estáticos e copiando.
 
 ```bash
-manage.py collectstatic
+manage collectstatic
 ls staticfiles
 ls staticfiles/admin
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 ## Experimento desligando o `dj-static` que está servindo os arquivos
@@ -56,7 +56,7 @@ Editar o comando `application = Cling(get_wsgi_application())` no arquivo `event
 Servir o site novamente.
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False manage runserver
 ```
 
 Em outro terminal, acesse:
@@ -76,7 +76,7 @@ Deixe o localhost:8001 rodando e edite o arquivo `eventex/settings.py`, trocando
 Acesse o site:
 
 ```bash
-DEBUG=False manage.py runserver
+DEBUG=False python manage runserver
 ```
 
 Abra uma imagem qualquer da página em outra aba e repare que a *url* agora usa `localhost:8001/img/sponsor-gold-01.png`, por exemplo.
