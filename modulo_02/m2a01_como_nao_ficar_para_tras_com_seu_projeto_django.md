@@ -34,19 +34,19 @@ Atualize o requirements.txt na mão. Mude apenas a versão do Django. Isso porqu
 Informa se algo importante mudou ou se alguma função está marcado como 'deprecated' (manutenção descontinuada na próxima release)
 
 ```bash
-python manage.py check
+manage.py check
 ```
 
 Rodar os testes.
 
 ```bash
-python manage.py test
+manage.py test
 ```
 
 Conferir se tá tudo rodando.
 
 ```bash
-python manage.py runserver
+manage.py runserver
 ```
 
 ## Deploy
