@@ -20,7 +20,7 @@ No entanto, ao acessar uma *url* inexistente (e.g. https://eventex-kguidonimarti
 Listando as variáveis de ambiente.
 
 ```bash
-heroku confing
+heroku config
 ```
 
 Conferindo as opções do `heroku config`.
