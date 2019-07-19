@@ -58,3 +58,5 @@ coverage.xml
 docs/_build/
 .Rproj.user
 my_project/.idea
+
+scrape_aulas_nomes_links/.Rhistory
