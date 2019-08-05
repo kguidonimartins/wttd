@@ -36,7 +36,7 @@ echo '
 export PATH="/home/karlo/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-' > ~/.bashrc 
+' >> ~/.bashrc 
 ```
 
 Para que tudo funcione, é necessário recarregar o arquivo .bashrc com:
