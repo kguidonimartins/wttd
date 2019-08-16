@@ -60,3 +60,4 @@ docs/_build/
 my_project/.idea
 
 scrape_aulas_nomes_links/.Rhistory
+.vscode/
