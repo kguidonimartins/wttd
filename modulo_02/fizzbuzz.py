@@ -25,6 +25,7 @@ def robot(pos):
 
     return say
 
+
 if __name__ == '__main__':
     assert robot(1) == '1'
     assert robot(2) == '2'
