@@ -1,8 +1,8 @@
+from fizzbuzz_unittest import robot
 import unittest
-from fizzbuzz_update_assert import robot
 
 
-class Fizzbuzz(unittest.TestCase):
+class FizzbuzzTest(unittest.TestCase):
     def test_say_1_when_1(self):
         self.assertEqual(robot(1), '1')
 
@@ -30,11 +30,11 @@ class Fizzbuzz(unittest.TestCase):
     def test_say_buzz_when_20(self):
         self.assertEqual(robot(20), 'buzz')
 
-    def test_say_buzz_when_15(self):
+    def test_say_fizzbuzz_when_15(self):
         self.assertEqual(robot(15), 'fizzbuzz')
 
-    def test_say_buzz_when_30(self):
+    def test_say_fizzbuzz_when_30(self):
         self.assertEqual(robot(30), 'fizzbuzz')
 
-    def test_say_buzz_when_45(self):
+    def test_say_fizzbuzz_when_45(self):
         self.assertEqual(robot(45), 'fizzbuzz')
