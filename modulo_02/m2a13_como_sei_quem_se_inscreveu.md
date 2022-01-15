@@ -62,7 +62,7 @@ FAIL: test_post (eventex.subscriptions.tests.SubscribePostTest)
 Valid POST shoud redirect to /inscricao/
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 50, in test_post
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 50, in test_post
     self.assertEqual(302, response.status_code)
 AssertionError: 302 != 200
 
@@ -169,7 +169,7 @@ System check identified no issues (0 silenced).
 FAIL: test_send_subscribe_email (eventex.subscriptions.tests.SubscribePostTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 56, in test_send_subscribe_email
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 56, in test_send_subscribe_email
     self.assertEqual(1, len(mail.outbox))
 AssertionError: 1 != 0
 
@@ -247,7 +247,7 @@ System check identified no issues (0 silenced).
 FAIL: test_subscription_email_subject (eventex.subscriptions.tests.SubscribePostTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 62, in test_subscription_email_subject
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 62, in test_subscription_email_subject
     self.assertEqual(expect, email.subject)
 AssertionError: 'Confirmação de inscrição' != 'Subject'
 - Confirmação de inscrição
@@ -326,7 +326,7 @@ System check identified no issues (0 silenced).
 FAIL: test_subscription_email_from (eventex.subscriptions.tests.SubscribePostTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 68, in test_subscription_email_from
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 68, in test_subscription_email_from
     self.assertEqual(expect, email.from_email)
 AssertionError: 'contato@eventex.com.br' != 'sender@email.com'
 - contato@eventex.com.br
@@ -405,7 +405,7 @@ System check identified no issues (0 silenced).
 FAIL: test_subscription_email_to (eventex.subscriptions.tests.SubscribePostTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 74, in test_subscription_email_to
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 74, in test_subscription_email_to
     self.assertEqual(expect, email.to)
 AssertionError: Lists differ: ['contato@eventex.com.br', 'kguidonimartins@gmail.com'] != ['visitor@email.com']
 
@@ -494,7 +494,7 @@ System check identified no issues (0 silenced).
 FAIL: test_subscription_email_body (eventex.subscriptions.tests.SubscribePostTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 79, in test_subscription_email_body
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 79, in test_subscription_email_body
     self.assertIn('Karlo Guidoni Martins', email.body)
 AssertionError: 'Karlo Guidoni Martins' not found in 'Message'
 
@@ -725,7 +725,7 @@ ERROR: test_post (eventex.subscriptions.tests.SubscribeInvalidPost)
 Invalid POST should not redirect
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 88, in test_post
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 88, in test_post
     response = self.client.post('/inscricao/', {})
   File "/home/karlo/.pyenv/versions/3.7.4/lib/python3.7/site-packages/django/test/client.py", line 543, in post
     response = super().post(path, data=data, content_type=content_type, secure=secure, **extra)
@@ -741,7 +741,7 @@ Traceback (most recent call last):
     response = self.process_exception_by_middleware(e, request)
   File "/home/karlo/.pyenv/versions/3.7.4/lib/python3.7/site-packages/django/core/handlers/base.py", line 113, in _get_response
     response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/views.py", line 21, in subscribe
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/views.py", line 21, in subscribe
     ['contato@eventex.com.br', form.cleaned_data['email']]
 KeyError: 'email'
 
@@ -836,7 +836,7 @@ System check identified no issues (0 silenced).
 FAIL: test_template (eventex.subscriptions.tests.SubscribeInvalidPost)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 94, in test_template
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 94, in test_template
     self.assertTemplateUsed(self.resp, 'subscription/subscription_form.html')
   File "/home/karlo/.pyenv/versions/3.7.4/lib/python3.7/site-packages/django/test/testcases.py", line 639, in assertTemplateUsed
     self.fail(msg_prefix + "No templates used to render the response")
@@ -942,7 +942,7 @@ System check identified no issues (0 silenced).
 ERROR: test_has_form (eventex.subscriptions.tests.SubscribeInvalidPost)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 97, in test_has_form
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 97, in test_has_form
     form = self.resp.context['form']
   File "/home/karlo/.pyenv/versions/3.7.4/lib/python3.7/site-packages/django/template/context.py", line 83, in __getitem__
     raise KeyError(key)
@@ -1047,7 +1047,7 @@ System check identified no issues (0 silenced).
 FAIL: test_form_has_errors (eventex.subscriptions.tests.SubscribeInvalidPost)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 102, in test_form_has_errors
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 102, in test_form_has_errors
     self.assertTrue(form.errors)
 AssertionError: {} is not true
 
@@ -1390,7 +1390,7 @@ System check identified no issues (0 silenced).
 FAIL: test_message (eventex.subscriptions.tests.SubscribeSuccessMessage)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 114, in test_message
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/subscriptions/tests.py", line 114, in test_message
     self.assertContains(response, 'Inscrição realizada com sucesso!')
   File "/home/karlo/.pyenv/versions/3.7.4/lib/python3.7/site-packages/django/test/testcases.py", line 454, in assertContains
     self.assertTrue(real_count != 0, msg_prefix + "Couldn't find %s in response" % text_repr)
@@ -1699,7 +1699,7 @@ System check identified no issues (0 silenced).
 FAIL: test_subscription_link (eventex.core.tests.HomeTest)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "/home/karlo/GoogleDrive2/git-repos/wttd/my_project/eventex/core/tests.py", line 19, in test_subscription_link
+  File "/home/karlo/google-drive/kguidonimartins/git-repos/wttd/my_project/eventex/core/tests.py", line 19, in test_subscription_link
     self.assertContains(self.response, 'href="/inscricao/"')
   File "/home/karlo/.pyenv/versions/3.7.4/lib/python3.7/site-packages/django/test/testcases.py", line 454, in assertContains
     self.assertTrue(real_count != 0, msg_prefix + "Couldn't find %s in response" % text_repr)
